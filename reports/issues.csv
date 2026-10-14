@@ -1,0 +1,21 @@
+row,plot_id,check,severity,detail
+61,F_empty,empty_geometry,error,Geometry is missing or empty
+62,F_point,not_polygon,error,Geometry is not a polygon (for example a point or line)
+60,F_invalid,invalid_geometry,error,"Polygon is invalid, such as a self-intersecting bowtie"
+63,,missing_id,error,Plot ID is missing
+1,P001,duplicate_id,error,Plot ID is used more than once
+64,P001,duplicate_id,error,Plot ID is used more than once
+5,P005,duplicate_geometry,error,Same shape appears under more than one ID
+65,F_dupgeom,duplicate_geometry,error,Same shape appears under more than one ID
+66,F_outside,outside_bbox,error,Plot lies outside the expected area
+67,F_swapped,outside_bbox,error,Plot lies outside the expected area
+67,F_swapped,swapped_xy,error,Latitude and longitude look swapped
+68,F_large,too_large,error,Area is above the maximum plausible plot size
+69,F_small,too_small,warning,Area is below the minimum plausible plot size
+70,F_sliver,too_small,warning,Area is below the minimum plausible plot size
+70,F_sliver,sliver,warning,"Shape is a thin sliver, often a digitising error"
+71,F_areamismatch,area_mismatch,warning,Stated area differs from the area computed from the polygon
+5,P005,overlap,warning,Plot overlaps another plot beyond the allowed share
+65,F_dupgeom,overlap,warning,Plot overlaps another plot beyond the allowed share
+72,F_overlap_a,overlap,warning,Plot overlaps another plot beyond the allowed share
+73,F_overlap_b,overlap,warning,Plot overlaps another plot beyond the allowed share
